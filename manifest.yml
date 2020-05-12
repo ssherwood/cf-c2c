@@ -1,0 +1,14 @@
+---
+applications:
+  - name: demo-ping
+    path: demo-ping/target/demo-ping-0.0.1-SNAPSHOT.jar
+    buildpacks:
+      - java_buildpack_offline
+    memory: 1G
+    instances: 1
+  - name: demo-pong
+    path: demo-pong/target/demo-pong-0.0.1-SNAPSHOT.jar
+    buildpacks:
+      - java_buildpack_offline
+    memory: 1G
+    instances: 3
